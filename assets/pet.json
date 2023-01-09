@@ -1,0 +1,114 @@
+{
+  "dogs": [
+    {
+      "uid":"id1",
+      "name": "Buddy",
+      "breed": "Labrador Retriever",
+      "age": 3,
+      "gender": "male",
+      "size": "large",
+      "photo": "assets/lab.png",
+      "description": "Buddy is a friendly and energetic Lab who loves to play fetch and go on long walks. He is good with kids and gets along well with other dogs. Buddy is house-trained and knows basic commands. He would make a great addition to any family."
+    },
+    {
+      "uid":"id2",
+      "name": "Daisy",
+      "breed": "Poodle",
+      "age": 5,
+      "gender": "female",
+      "size": "small",
+      "photo": "assets/poodle.png",
+      "description": "Daisy is a sweet and affectionate Poodle who loves to cuddle and be pampered. She is well-behaved and knows basic commands. Daisy gets along well with other dogs and is good with kids. She would make a great companion for someone who is looking for a lap dog."
+    },
+    {
+      "uid":"id3",
+      "name": "Max",
+      "breed": "German Shepherd",
+      "age": 7,
+      "gender": "male",
+      "size": "large",
+      "photo": "assets/german.png",
+      "description": "Max is a loyal and protective German Shepherd who is looking for an experienced owner. He is highly intelligent and would excel in obedience training or other activities that challenge his mind. Max is good with kids and gets along well with other dogs. He would make a great companion for someone who is looking for a companion to do activities with."
+    },
+    {
+      "uid":"id4",
+      "name": "Lucy",
+      "breed": "Beagle",
+      "age": 2,
+      "gender": "female",
+      "size": "small",
+      "photo": "assets/beagle.png",
+      "description": "Lucy is a energetic and playful Beagle who loves to go on adventures. She is curious and always sniffing around for new things to discover. Lucy is good with kids and gets along well with other dogs. She would make a great companion for someone who is looking for an active dog."
+    },
+    {
+      "uid":"id5",
+      "name": "Charlie",
+      "breed": "Golden Retriever",
+      "age": 4,
+      "gender": "male",
+      "size": "large",
+      "photo": "assets/golden.png",
+      "description": "Charlie is a friendly and outgoing Golden Retriever who loves to make new friends. He is good with kids and gets along well with other dogs. Charlie is highly trainable and loves to learn new tricks. He would make a great companion for someone who is looking for a dog to do activities with."
+    },
+    {
+      "uid":"id6",
+      "name": "Sadie",
+      "breed": "Bulldog",
+      "age": 6,
+      "gender": "female",
+      "size": "medium",
+      "photo": "assets/bulldog.png",
+      "description": "Sadie is a sweet and gentle Bulldog who loves nothing more than cuddling on the couch. She is good with kids and gets along well with other dogs. Sadie is a low-energy dog and would be happy with a few short walks a day. She would make a great companion for someone who is looking for a relaxed and low-maintenance dog."
+      },
+      {
+        "uid":"id7",
+        "name": "Molly",
+            "breed": "Siberian Husky",
+            "age": 4,
+            "gender": "female",
+            "size": "medium",
+            "photo": "assets/husky.png",
+            "description": "Molly is a beautiful and energetic Siberian Husky who loves to run and play. She is highly intelligent and would excel in obedience training or other activities that challenge her mind. Molly is good with kids and gets along well with other dogs. She would make a great companion for someone who is looking for an active dog to do activities with."
+          },
+          {
+            "uid":"id8",
+            "name": "Toby",
+            "breed": "Boston Terrier",
+            "age": 5,
+            "gender": "male",
+            "size": "small",
+            "photo": "assets/terrier.png",
+            "description": "Toby is a friendly and energetic Boston Terrier who loves to play and go on walks. He is good with kids and gets along well with other dogs. Toby is highly trainable and loves to learn new tricks. He would make a great companion for someone who is looking for a playful and intelligent dog."
+          },
+          {
+            "uid":"id9",
+            "name": "Riley",
+            "breed": "Australian Shepherd",
+            "age": 2,
+            "gender": "male",
+            "size": "medium",
+            "photo": "assets/aussie.png",
+            "description": "Riley is a smart and energetic Australian Shepherd who loves to play and go on adventures. He is good with kids and gets along well with other dogs. Riley is highly trainable and would excel in obedience training or other activities that challenge his mind. He would make a great companion for someone who is looking for an active and intelligent dog."
+          },
+          {
+            "uid":"id10",
+            "name": "Lola",
+            "breed": "Chihuahua",
+            "age": 6,
+            "gender": "female",
+            "size": "small",
+            "photo": "assets/chihuahua.png",
+            "description": "Lola is a sweet and affectionate Chihuahua who loves nothing more than cuddling on the couch. She is good with kids and gets along well with other dogs. Lola is a low-energy dog and would be happy with a few short walks a day. She would make a great companion for someone who is looking for a relaxed and low-maintenance dog."
+          },
+          {
+            "uid":"id11",
+            "name": "Bentley",
+            "breed": "Labrador Retriever",
+            "age": 3,
+            "gender": "male",
+            "size": "large",
+            "photo": "assets/lab.png",
+            "description": "Bentley is a friendly and energetic Lab who loves to play fetch and go on long walks. He is good with kids and gets along well with other dogs. Bentley is house-trained and knows basic commands. He would make a great addition to any family."
+          }
+        ]
+      }
