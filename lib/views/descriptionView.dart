@@ -206,34 +206,58 @@ class _DescriptionViewState extends State<DescriptionView>
                         ]),
                       ).py12(),
                       10.heightBox,
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width,
-                        child: descriptionViewModel.breed.text
-                            .maxLines(5)
-                            .overflow(
-                              TextOverflow.ellipsis,
-                            )
-                            .bold
-                            .size(30)
-                            .make()
-                            .p(10),
-                      ).px(40),
-                      10.heightBox,
-                      AnimatedOpacity(
-                        opacity: descriptionViewModel.animation ? 0 : 1,
-                        duration: const Duration(milliseconds: 500),
-                        child: SizedBox(
-                          width: MediaQuery.of(context).size.width,
-                          child: descriptionViewModel.description.text
-                              .maxLines(1000)
-                              .overflow(
-                                TextOverflow.ellipsis,
-                              )
-                              .size(20)
-                              .make()
-                              .p(10),
-                        ).px(40),
-                      ),
+                      Stack(children: [
+                        Center(
+                          child: SizedBox(
+                              width: MediaQuery.of(context).size.width * 0.9,
+                              child: Card(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20)),
+                                  color: _brightness == Brightness.dark
+                                      ? MyThemes.cardColorDark
+                                      : MyThemes.cardColor,
+                                  child: ConstrainedBox(
+                                      constraints: const BoxConstraints(
+                                        minHeight: 100,
+                                      ),
+                                      child: Column(
+                                        children: [
+                                          SizedBox(
+                                            width: MediaQuery.of(context)
+                                                .size
+                                                .width,
+                                            child:
+                                                descriptionViewModel.breed.text
+                                                    .maxLines(5)
+                                                    .overflow(
+                                                      TextOverflow.ellipsis,
+                                                    )
+                                                    .bold
+                                                    .size(30)
+                                                    .make()
+                                                    .pOnly(left: 20, top: 10),
+                                          ),
+                                          AnimatedOpacity(
+                                            opacity:
+                                                descriptionViewModel.animation
+                                                    ? 0
+                                                    : 1,
+                                            duration: const Duration(
+                                                milliseconds: 500),
+                                            child: descriptionViewModel
+                                                .description.text
+                                                .maxLines(1000)
+                                                .overflow(
+                                                  TextOverflow.ellipsis,
+                                                )
+                                                .size(20)
+                                                .make()
+                                                .p(20),
+                                          )
+                                        ],
+                                      )))),
+                        ),
+                      ]),
                       10.heightBox,
                     ],
                   ),

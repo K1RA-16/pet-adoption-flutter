@@ -86,6 +86,7 @@ class _HomeViewState extends State<HomeView> {
                         opacity: homeViewModel.loading ? 0.1 : 1,
                         duration: const Duration(milliseconds: 500),
                         child: const ListBuilder()))
+                  
               ],
             ),
             if (homeViewModel.loading)

@@ -5,17 +5,40 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:lottie/lottie.dart';
+import 'dart:convert';
 
-import 'package:pet_adoption/main.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:pet_adoption/utils/db.dart';
+import 'package:pet_adoption/utils/dbStruct.dart';
 import 'package:pet_adoption/view_models/homeViewModel.dart';
 import 'package:pet_adoption/views/homeView.dart';
 
 import 'package:provider/provider.dart';
 
 void main() {
+  testWidgets('DB read json', (WidgetTester tester) async {
+    // Create an instance of the HomeViewModel
+    String response = await rootBundle.loadString('assets/pet.json');
+    final data = await json.decode(response);
+    Db.data = List.from(data['dogs'])
+        .map<DbStruct>((item) => DbStruct.fromMap(item))
+        .toList();
+    var pet = DbStruct(
+        uid: "id3",
+        name: "Max",
+        breed: "German Shepherd",
+        age: 7,
+        gender: "male",
+        size: "large",
+        description:
+            "Max is a loyal and protective German Shepherd who is looking for an experienced owner. He is highly intelligent and would excel in obedience training or other activities that challenge his mind. Max is good with kids and gets along well with other dogs. He would make a great companion for someone who is looking for a companion to do activities with.",
+        photo: "assets/german.png");
+    // Verify that the loading indicator is displayed
+    expect(Db.data.length, 11);
+    expect(Db.data.contains(pet), true);
+  });
   testWidgets('HomeView has a loading indicator', (WidgetTester tester) async {
     // Create an instance of the HomeViewModel
     Provider.debugCheckInvalidValueType = null;

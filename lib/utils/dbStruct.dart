@@ -82,27 +82,27 @@ class DbStruct {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-  
+
     return other is DbStruct &&
-      other.uid == uid &&
-      other.name == name &&
-      other.breed == breed &&
-      other.age == age &&
-      other.gender == gender &&
-      other.size == size &&
-      other.description == description &&
-      other.photo == photo;
+        other.uid == uid &&
+        other.name == name &&
+        other.breed == breed &&
+        other.age == age &&
+        other.gender == gender &&
+        other.size == size &&
+        other.description == description &&
+        other.photo == photo;
   }
 
   @override
   int get hashCode {
     return uid.hashCode ^
-      name.hashCode ^
-      breed.hashCode ^
-      age.hashCode ^
-      gender.hashCode ^
-      size.hashCode ^
-      description.hashCode ^
-      photo.hashCode;
+        name.hashCode ^
+        breed.hashCode ^
+        age.hashCode ^
+        gender.hashCode ^
+        size.hashCode ^
+        description.hashCode ^
+        photo.hashCode;
   }
 }

@@ -15,7 +15,7 @@ import '../views/descriptionView.dart';
 class HomeViewModel extends ChangeNotifier {
   List<DbStruct> _petData = [];
   List<DbStruct> _adoptedPets = [];
-
+  bool animate = false;
   List<DbStruct> get petData => _petData;
   List<DbStruct> get adoptedPets => _adoptedPets;
   bool loading = false;
@@ -31,9 +31,9 @@ class HomeViewModel extends ChangeNotifier {
     loading = value;
   }
 
-  setTheme() {
-    // theme =
-    // notifyListeners();
+  setAnimated(value) {
+    animate = value;
+    notifyListeners();
   }
 
   Future<void> readJson() async {

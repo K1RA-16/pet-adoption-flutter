@@ -5,7 +5,7 @@ class MyThemes {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
       primarySwatch: Colors.grey,
       //scaffoldBackgroundColor: LinearGradient(colors: gradientColor),
-      fontFamily: GoogleFonts.quicksand().fontFamily,
+      fontFamily: GoogleFonts.asar().fontFamily,
       brightness: Brightness.light,
       appBarTheme: AppBarTheme(
         backgroundColor: barcolor,
@@ -25,7 +25,7 @@ class MyThemes {
   static Color barcolor = (const Color(0xffB6E2D3));
   static Color barcolorDark = (Color.fromARGB(255, 99, 148, 145));
   static Color cardColor = const Color(0xffFAE8E0);
-  static Color cardColorDark = (Color.fromARGB(255, 169, 140, 121));
+  static Color cardColorDark = (Color.fromARGB(255, 212, 158, 122));
   static Color backgroundColor = Color.fromARGB(255, 236, 144, 158);
   static Color backgroundColorDark = (Color.fromARGB(255, 171, 89, 98));
 }
